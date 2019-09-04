@@ -1,0 +1,62 @@
+<% include ./partials/header %>
+
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+
+
+
+    <div class="content">
+    
+     <!-- Blog heading  -->
+    <h1><%= blog.title %></h1>
+    <br>
+    
+    <!-- Blog  Created date  -->
+    <div class="pdate"><%= blog.created.toDateString() %></div><br>
+    
+    <br>
+    
+    <img src="<%= blog.image %>" alt="blog pic" border="0"></<img>
+    <br><br>
+    <div class="blog_content">
+        <%- blog.body %>  
+    </div>
+    <br> 
+    
+    <!-- socialmedia icons -->
+    <% include partials/socialmedia%>
+    <br>
+   
+     <!-- edit delete button -->
+     <div class="edit_del">
+     <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form> 
+    </div> 
+   
+    
+    <!-- Disqus comment section -->
+    <div class="disqus">
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+      this.page.url = 'http://localhost:3000';  
+      this.page.identifier = '12345';};
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yoddhas-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                  
+    
+    </div>
+    <br>
+    </div>
+
+<% include ./partials/footer %>
+

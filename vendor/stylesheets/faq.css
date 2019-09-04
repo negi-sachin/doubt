@@ -1,0 +1,41 @@
+/*faq*/
+.jumbotron{
+
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #f99748;
+    color: floralwhite;
+
+}
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+.row-content{
+    margin:0px auto;
+    padding:50px 0px 50px 0px;
+    border-bottom:1px ridge;
+    min-height:400px;
+}    
+
+.accordion-toggle:after {
+   
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    float:right;
+  color:  #f99748;
+}
+.accordion-toggle.collapsed:after {    
+   
+    content: "\f103";
+color: #f99748;
+       
+}
+.page-header {
+    
+        
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        
+}

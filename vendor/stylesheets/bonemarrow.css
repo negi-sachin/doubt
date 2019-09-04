@@ -1,0 +1,45 @@
+ .c1{
+
+  padding:20px 30px 20px 20px;
+  margin:0px auto;
+ 
+ 
+} 
+.peopleCarouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+.row-content{
+  margin:0px auto;
+  padding:50px 0px 50px 0px;
+  border-bottom:1px ridge;
+  min-height:400px;
+}    
+.jumbotron{
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background: #f99748;
+  color: floralwhite;
+}
+.content .container{
+  padding:10px 30px 20px 30px;
+  margin:0px auto;
+
+}
+#StemCell{
+background-color: aquamarine
+}
+#HLA{
+  background-color: bisque
+}
+#StemDonor{
+  background-color: antiquewhite
+}
+#f1{
+  background-color:gray ;
+  
+}
+#art{
+  background-color: silver
+}
